@@ -57,9 +57,7 @@ class ListQueue:
 
     def dequeue(self):
         """removes and returns an element from the front of the queue"""
-        # Todo: make use of the function _resize(self, new_capacity) function to shrink the size of the queue to
-        #  2/3rd of its current capacity if the number of elements in the queue drops to 1/3rd of the current
-        #   capacity.
+
         if self.is_empty():
             raise IndexError("Queue is empty")
         answer = self._data[self._front]
